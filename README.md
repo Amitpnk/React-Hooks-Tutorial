@@ -31,11 +31,14 @@ If you like or are using this project to learn or start your solution, please gi
 
 ## About React Hooks
 
-<!-- React application is javascript library for building user interface.
+Hooks are a new feature additiona in React version 16.8 which allow you to use React features without having to write a class
 
-In our applicatin, we are using React version 16.8.6 and react-scripts 3.0.1
+Previously we have to use state only in Class component
+Hooks works on functional component
 
-From Sep 23,2017 i.e., react 16.0.0 onward Facebook has released with MIT License -->
+### Why Hooks?
+
+Understanding how **this** keyword works in Javascript
 
 ## Prerequisite to react-hook
 
@@ -43,9 +46,9 @@ Knowledge on basic react <br/>
 Install Node and npm latest version <br/> 
 Install Visual Studio Code <br/>
 
-## Reference
+<!-- ## Reference
 
-* [Youtube](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=1&pbjreload=101)
+* [Youtube](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=1&pbjreload=101) -->
 
 ## Feedback
 
@@ -54,6 +57,12 @@ Having any issues or troubles getting started? Drop a mail to amit.naik8103@gmai
 ## Sample application with each labs
 
 ### Lab 1 - Running first react application
+
+#### Prerequisite 
+
+Knowledge on basic react <br/>
+Functional and class components, props, state, etc
+
 
 To create a project, run below command line prompt
 
