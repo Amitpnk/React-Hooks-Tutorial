@@ -13,8 +13,8 @@ If you like or are using this project to learn or start your solution, please gi
     - Introduction
         - [Lab 1 - Running first react application](#Lab-1---Running-first-react-application)
     - useState Hook - State
-        - [Lab 2 - useState Hook]()
-        - [Lab 3 - useState with previous state]()
+        - [Lab 2 - useState Hook](#Lab-2---useState-Hook)
+        - [Lab 3 - useState with previous state](#Lab-3---useState-with-previous-state)
         - [Lab 4 - useState with object]()
         - [Lab 5 - useState with array]()
     - useEffect Hook
@@ -91,7 +91,7 @@ $ npm run start
 
 ```
 
-### Lab 2 - Reack Hook
+### Lab 2 - Reack Hook 
 
 * Call Hooks at top level (not inside loops, conditions or nested functions)
 * Call hooks form react functions only
