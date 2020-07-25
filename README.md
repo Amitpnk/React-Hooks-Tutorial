@@ -18,7 +18,7 @@ If you like or are using this project to learn or start your solution, please gi
         - [Lab 4 - useState with object](#Lab-4---useState-with-object)
         - [Lab 5 - useState with array](#Lab-5---useState-with-array)
     - [useEffect Hook](#useEffect-Hook)
-        - [Lab 6 - useEffect Hook](#)
+        - [Lab 6 - useEffect Hook](#Lab-6---useEffect-Hook)
         - [Lab 6 - useEffect after render](#)
         - [Lab 7 - conditional run effects](#)
         - [Lab 8 - run effects only once](#)
@@ -91,7 +91,8 @@ $ npm run start
 
 ## useState Hook
 
-useState hook lets you add state to function components
+* useState hook lets you add state to function components
+* useState hook returns an array with 2 elements (First is current value, second element is state setter function)
 
 ### Lab 2 - useState Hook
 
@@ -209,4 +210,30 @@ function HookCounterArray() {
 }
 
 export default HookCounterArray
+```
+
+## useEffect Hook
+
+* useEffect runs after every render 
+* It is close replacement for *componentDidMount*, *componentDidUpdate* and *componentWillUnmount*
+
+### Lab 6 - useEffect Hook
+
+```jsx
+import React, { useState, useEffect } from 'react'
+
+function HookCounterUseEffect() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        document.title = `You clicked ${count} times`
+    })
+    return (
+        <div>
+            <button onClick={() => setCount(count + 1)}>Click {count} times</button>
+        </div>
+    )
+}
+
+export default HookCounterUseEffect
 ```
