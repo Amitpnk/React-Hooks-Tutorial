@@ -16,7 +16,7 @@ If you like or are using this project to learn or start your solution, please gi
         - [Lab 2 - useState Hook](#Lab-2---useState-Hook)
         - [Lab 3 - useState with previous state](#Lab-3---useState-with-previous-state)
         - [Lab 4 - useState with object](#Lab-4---useState-with-object)
-        - [Lab 5 - useState with array](#)
+        - [Lab 5 - useState with array](#Lab-5---useState-with-array)
     - useEffect Hook
         - [Lab 6 - useEffect Hook](#)
         - [Lab 6 - useEffect after render](#)
@@ -38,13 +38,16 @@ Hooks works on functional component and cannot be use inside class component
 
 ### Why Hooks?
 
+#### Rules 1
 * Understanding how **this** keyword works in Javascript
 * Remember to bind event handlers in class components
 * Classes don't minify very well and make reloading unreliable
 
+#### Rules 2
 * Stateful component logic can't be reuse
 * HOC and render props patterns solve above problem but complex coding
 
+#### Rules 3
 * Related code is not organised in Class component, for complex scenarios such as data fetching and subscribing to events
 * eg: Data fetching - In componentDidMount and sometimes in componentDidUpdate
 * eg: Event listeners - subscribe in componentDidMount and unsubscribe in componentWillUnmount
@@ -52,13 +55,9 @@ Hooks works on functional component and cannot be use inside class component
 
 ## Prerequisite to react-hook
 
-Knowledge on basic react <br/>
-Install Node and npm latest version <br/> 
-Install Visual Studio Code <br/>
-
-<!-- ## Reference
-
-* [Youtube](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A&index=1&pbjreload=101) -->
+*  Knowledge on basic react <br/>
+*  Install Node and npm latest version <br/> 
+*  Install Visual Studio Code <br/>
 
 ## Feedback
 
@@ -155,7 +154,6 @@ export default HookCounterPrevious
 ```
 ### Lab 4 - useState with object
 
-
 * Use spread operator while using object
 
 ```jsx
@@ -175,4 +173,37 @@ function HookCounterObject() {
 }
 
 export default HookCounterObject
+```
+
+### Lab 5 - useState with array
+
+```jsx
+import React, { useState } from 'react'
+
+function HookCounterArray() {
+
+    const [items, setItems] = useState([]);
+
+
+    const addItem = () => {
+        setItems([...items, {
+            id: items.length,
+            value: Math.floor(Math.random() * 10) + 1
+        }])
+    }
+
+    return (
+        <div>
+            <button onClick={addItem} >Add number</button>
+            <ul>
+                {items.map(item => (
+                    <li key={item.id}>{item.value}</li>
+                ))}
+
+            </ul>
+        </div>
+    )
+}
+
+export default HookCounterArray
 ```
