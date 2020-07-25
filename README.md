@@ -15,7 +15,7 @@ If you like or are using this project to learn or start your solution, please gi
     - useState Hook - State
         - [Lab 2 - useState Hook](#Lab-2---useState-Hook)
         - [Lab 3 - useState with previous state](#Lab-3---useState-with-previous-state)
-        - [Lab 4 - useState with object]()
+        - [Lab 4 - useState with object](#Lab-4---useState-with-object)
         - [Lab 5 - useState with array]()
     - useEffect Hook
         - [Lab 5 - useEffect Hook]()
@@ -96,6 +96,12 @@ $ npm run start
 * Call Hooks at top level (not inside loops, conditions or nested functions)
 * Call hooks form react functions only
 
+
+ Below type is Array destructuring in es6 
+```js
+const [count, setCount] = useState(0);
+```
+
 ```js
 import React, { useState } from 'react'
 
@@ -146,4 +152,27 @@ function HookCounterPrevious() {
 
 export default HookCounterPrevious
 
+```
+### Lab 4 - useState with object
+
+
+* Use spread operator while using object
+
+```jsx
+import React, { useState } from 'react'
+
+function HookCounterObject() {
+    const [name, setName] = useState({ firstName: '', lastName: '' });
+    return (
+        <form>
+            <input type="text" value={name.firstName} onChange={e => setName({ ...name, firstName: e.target.value })} />
+            <input type="text" value={name.lastName} onChange={e => setName({ ...name, lastName: e.target.value })} />
+            <h2>Your first name is - {name.firstName}</h2>
+            <h2>Your last name is - {name.lastName}</h2>
+            <h2>{JSON.stringify(name)}</h2>
+        </form>
+    )
+}
+
+export default HookCounterObject
 ```
