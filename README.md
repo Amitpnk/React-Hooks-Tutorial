@@ -12,12 +12,12 @@ If you like or are using this project to learn or start your solution, please gi
 - Sample application with each labs
     - Introduction
         - [Lab 1 - Running first react application](#Lab-1---Running-first-react-application)
-    - useState Hook - State
+    - [useState Hook](#useState-Hook)
         - [Lab 2 - useState Hook](#Lab-2---useState-Hook)
         - [Lab 3 - useState with previous state](#Lab-3---useState-with-previous-state)
         - [Lab 4 - useState with object](#Lab-4---useState-with-object)
         - [Lab 5 - useState with array](#Lab-5---useState-with-array)
-    - useEffect Hook
+    - [useEffect Hook](#useEffect-Hook)
         - [Lab 6 - useEffect Hook](#)
         - [Lab 6 - useEffect after render](#)
         - [Lab 7 - conditional run effects](#)
@@ -72,7 +72,6 @@ Having any issues or troubles getting started? Drop a mail to amit.naik8103@gmai
 Knowledge on basic react <br/>
 Functional and class components, props, state, etc
 
-
 To create a project, run below command line prompt
 
 ```
@@ -90,7 +89,11 @@ $ npm run start
 
 ```
 
-### Lab 2 - Reack Hook 
+## useState Hook
+
+useState hook lets you add state to function components
+
+### Lab 2 - useState Hook
 
 * Call Hooks at top level (not inside loops, conditions or nested functions)
 * Call hooks form react functions only
