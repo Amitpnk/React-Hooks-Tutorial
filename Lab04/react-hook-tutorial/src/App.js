@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import HookCounterPrevious from './components/HookCounterPrevious';
+import HookCounterObject from './components/HookCounterObject';
 
 function App() {
   return (
     <div className="App">
      
-      <HookCounterPrevious />
+      <HookCounterObject />
     </div>
   );
 }
