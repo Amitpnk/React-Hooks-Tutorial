@@ -18,7 +18,7 @@ If you like or are using this project to learn or start your solution, please gi
         - [Lab 4 - useState with object](#Lab-4---useState-with-object)
         - [Lab 5 - useState with array](#)
     - useEffect Hook
-        - [Lab 5 - useEffect Hook](#)
+        - [Lab 6 - useEffect Hook](#)
         - [Lab 6 - useEffect after render](#)
         - [Lab 7 - conditional run effects](#)
         - [Lab 8 - run effects only once](#)
